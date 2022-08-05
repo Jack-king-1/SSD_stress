@@ -6,8 +6,8 @@ mkdir /opt/performance_test_log/precondition_file
 mkdir /opt/performance_test_log/fio_log
 mkdir /opt/performance_test_log/job_file
 path=/opt/performance_test_log
-nvme_16T=`nvme -list | grep "WUS5BA1A1ESP5E1" | awk '{print$1}'`
-nvme_960G=`nvme -list | grep "KFL61HUL800G" | awk '{print$1}'`
+nvme_16T=`nvme -list | grep "xxxx" | awk '{print$1}'`
+nvme_960G=`nvme -list | grep "xxxx" | awk '{print$1}'`
 nvme=`nvme -list | awk '{print$1}' | grep -v -E "Node|-"`
 secure_erase()
 {
